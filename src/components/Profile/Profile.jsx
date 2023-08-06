@@ -1,26 +1,28 @@
-export const Profile = ({data: {avatar, username, tag, location, stats: {followers, views, likes}}})=> {
+import { List, Section, Image, Descr, Item, Text, Name, } from './Profile.styled'
+
+export const Profile = ({ data: { avatar, username, tag, location, stats: { followers, views, likes } } }) => {
     return (
-        <div>
-            <div>
-                <img src={avatar} alt={username} />
-                <p>{username}</p>
-                <p>{tag}</p>
-                <p>{location}</p>
-            </div>
-            <ul>
-                <li>
-                    <span>Followers</span>
-                    <span>{followers }</span>
-                </li>
-              <li>
-                <span>Views</span>
-                    <span>{ views}</span>
-              </li>
-              <li>
-                <span>Likes</span>
-                    <span>{likes }</span>
-              </li>
-            </ul>
-        </div>
+        <Section>
+            <Descr>
+                <Image src={avatar} alt={username} />
+                <Name>{username}</Name>
+                <Text>@{tag}</Text>
+                <Text>{location}</Text>
+            </Descr>
+            <List>
+                <Item>
+                    <Text>Followers</Text>
+                   <b> <span>{followers }</span></b>
+                </Item>
+              <Item>
+                <Text>Views</Text>
+                    <b><span>{ views}</span></b>
+              </Item>
+              <Item>
+                <Text>Likes</Text>
+                   <b> <span>{likes }</span></b>
+              </Item>
+            </List>
+        </Section>
     )
 }
