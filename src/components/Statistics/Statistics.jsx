@@ -1,5 +1,17 @@
-export const Statistics = ({data}) => {
+import { List, Section, Title } from './Statistic.styled'
+import { StatisticsItem } from './StatisticsItem'
+
+
+
+
+export const Statistics = ({ data }) => {
     return (
-       data.map(data => <div key={data.id}>34987395</div>) 
+        <Section>
+              <Title>Upload stats</Title>
+              <List>
+                <StatisticsItem data={data} />
+        </List>
+        </Section>
+      
     )
 }
