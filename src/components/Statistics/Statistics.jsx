@@ -4,12 +4,12 @@ import { StatisticsItem } from './StatisticsItem'
 
 
 
-export const Statistics = ({ data }) => {
+export const Statistics = ({ stats }) => {
     return (
         <Section>
               <Title>Upload stats</Title>
               <List>
-                <StatisticsItem data={data} />
+                <StatisticsItem stats={stats} />
         </List>
         </Section>
       

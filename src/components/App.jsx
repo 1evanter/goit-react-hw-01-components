@@ -11,8 +11,8 @@ import transactionsData from '../transactions.json'
 
 export const App = () => {
   return <div>
-    <Profile data={profileData} />
-    <Statistics data={statisticsData} />
+    <Profile user={profileData} />
+    <Statistics stats={statisticsData} />
     <FriendList friends={friendsData} />
     <TransactionHistory items={transactionsData} />
     <GlobalStyle/>

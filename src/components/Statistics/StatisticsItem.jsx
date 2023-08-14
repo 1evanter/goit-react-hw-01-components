@@ -1,10 +1,10 @@
 import { Item, Span } from './Statistic.styled'
 
-export const StatisticsItem = ({ data }) => {
+export const StatisticsItem = ({ stats }) => {
     return (
-        data.map(data => <Item key={data.id}>
-            <span>{ data.label}</span>
-            <Span>{data.percentage}%</Span>
+        stats.map(({id, label, percentage}) => <Item key={id}>
+            <span>{label}</span>
+            <Span>{percentage}%</Span>
         </Item>) 
     )
 }

@@ -1,6 +1,6 @@
 import { List, Section, Image, Descr, Item, Text, Name, } from './Profile.styled'
 
-export const Profile = ({ data: { avatar, username, tag, location, stats: { followers, views, likes } } }) => {
+export const Profile = ({ user: { avatar, username, tag, location, stats: { followers, views, likes } } }) => {
     return (
         <Section>
             <Descr>
