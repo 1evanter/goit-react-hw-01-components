@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Section = styled.section`
 max-width: 240px;
 margin: 0 auto;
-margin-top: 100px;
+margin-top: 50px;
 background-color: #DDE6ED;
 padding: 15px;
 border: 3px dotted #9DB2BF;
