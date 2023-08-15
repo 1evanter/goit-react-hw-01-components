@@ -4,10 +4,10 @@ import { Statistics } from "./Statistics/Statistics";
 import { FriendList } from "./FriendList/FriendList";
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 
-import profileData from "../user.json";
-import statisticsData from "../data.json";
-import friendsData from '../friends.json'
-import transactionsData from '../transactions.json'
+import profileData from "../data/user.json";
+import statisticsData from "../data/data.json";
+import friendsData from '../data/friends.json'
+import transactionsData from '../data/transactions.json'
 
 export const App = () => {
   return <div>
